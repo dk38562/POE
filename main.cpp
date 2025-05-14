@@ -100,7 +100,7 @@ bool shouldMotorMove;
 int main() {
     wait(1000, msec);
     motor20.setPosition(potentiometerB.angle(degrees), degrees);
-    motor20.setStopping(brake);  // CHANGE WHEN DONE!!!!
+    motor20.setStopping(hold);
 
     while (true) {
         wait(100, msec);
